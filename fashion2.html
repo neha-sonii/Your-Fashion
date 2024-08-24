@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fashion life</title>
+    <link rel="icon" type="image" href="fashion icon.png">
+    <link rel="stylesheet" href="fashion2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+   
+</head>
+<body>
+ 
+    <nav>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-sidebar-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label for="sidebar-active" id="overlay"></label>
+      <div class="link-container">
+         <label for="sidebar-active" class="close-sidebar-btn">
+          <p class="cutt">&times;</p>
+         </label>
+        
+         <a href="#">Home</a>
+         <a href="#">Fashion</a>
+         <a href="#">About</a>
+         <a href="#">Contact Us</a>
+         <a href="#" class="home-link"> <img src="magnifier.png" alt="search"></a>
+        
+      </div>
+    </nav>
+ 
+
+
+
+    <!-- <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a><img src="magnifier.png" class="search" style="float: right;"></a></li>
+    </ul> -->
+  
+    <div class="header">
+        <div class="head">
+            <h1 class="h1">Your Fashion</h1>
+            <h4 class="h4">Welcome to the World of <span class="design">Fashion</span></h4>
+        </div> 
+        <div class="head2">
+            <img src="winter outfit 5.jpeg" class="head-img" style="width: 100%; height: 900px;">  
+            <h1 class="header-main">Your Fashion<br> Life<br><button onclick="document.getElementById('id1').style.display='block'" class="button"><a href="#"><b>Check Out</b></a></button></h1> 
+
+            <div id="id1" class="w3-model animation">
+                <button onclick="document.getElementById('id1').style.display='none'" class="w3-large w3-clear">&times;</button>
+               <div class="w3-clear"></div>
+              <div class="container">
+                   <input class="input" type="search" placeholder="Search...">
+                   <div class="option slides">
+                      <span class="color red">Bodycoon Dress</span>
+                      <span class="color brown">PartyWear Dress</span>
+                      <span class="color green">Top & Jeans</span>
+                      <span class="color blue">Princess Dress</span>
+                      <span class="color beigh">Bell sleeve Dress</span>
+                      <span class="color purple">off shoulder Dress</span>
+                      <span class="color grey">Vintage Dress</span>
+                      <button class="w3-black display-left" onclick="right(-1)">&#10094;</button>
+                      <button class="w3-black display-right" onclick="right(1)">&#10095;</button>
+                   </div>
+                   <script>
+                    var slideIndex = 1;
+                    showDiv(slideIndex);
+                    function right(n) {
+                      showDiv(slideIndex += n);
+                    }
+                    function showDiv(n) {
+                      var i;
+                      var x = document.getElementsByClassName("slides");
+                      if(n > x.length) {
+                        slideIndex = 1;
+                      }
+                      if(n < 1) {
+                        slideIndex = x.length;
+                      }
+                      for(i = 0; i < x,length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      x[slideIndex-1].style.display = "block";
+                    }
+                   </script>
+
+
+
+
+                   <h1 class="smr">Summer Outfit</h1>
+
+                   <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer outfit 1.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal1').style.display = 'block'">
+
+                        <div class="modal" id="modal1" onclick="this.style.display='none'">
+                           <div class="w3-model-content w3-animate-zoom" >
+                             <img src="summer outfit 1.jpeg" style="width: 100%;">
+                           </div>
+                        </div>
+                        <div class="w3-container">
+                          <h5 class="save"><a href="summer outfit 1.jpeg" download>save</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer outfit 2.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal2').style.display = 'block'">  
+
+                        <div class="modal" id="modal2" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer outfit 2.jpeg" style="width: 120%;">
+                          </div>
+                        </div>
+                        <div class="w3-container">
+                        <h5 class="save"><a href="summer outfit 2.jpeg" download>save</a></h5>   
+                        </div>                
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer outfit 3.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal3').style.display = 'block'">
+
+                        <div class="modal" id="modal3" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer outfit 3.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer outfit 3.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer outfit 4.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal4').style.display = 'block'">
+
+                        <div class="modal" id="modal4" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer outfit 4.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer outfit 4.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer5.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal5').style.display = 'block'">
+
+                        <div class="modal" id="modal5" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer5.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer5.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 6.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal6').style.display = 'block'">
+
+                        <div class="modal" id="modal6" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 6.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 6.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 11.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal7').style.display = 'block'">
+
+                        <div class="modal" id="modal7" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 11.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 11.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 7.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal8').style.display = 'block'">
+
+                        <div class="modal" id="modal8" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 7.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 7.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 8.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal9').style.display = 'block'">
+
+                        <div class="modal" id="modal9" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 8.jpeg" style="width: 100%;">
+                          </div>
+                       </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 8.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 10.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal10').style.display = 'block'">
+
+                        <div class="modal" id="modal10" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 10.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 10.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer 9.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal11').style.display = 'block'">
+
+                        <div class="modal" id="modal11" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer 9.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer 9.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="summer  12.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal12').style.display = 'block'">
+
+                        <div class="modal" id="modal12" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="summer  12.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="summer  12.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <h1 class="smr wn">Winter Outfit</h1>
+
+                   <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter outfit 1.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w1').style.display = 'block'">
+
+                        <div class="modal" id="modal-w1" onclick="this.style.display='none'">
+                           <div class="w3-model-content w3-animate-zoom" >
+                             <img src="winter outfit 1.jpeg" style="width: 100%;">
+                           </div>
+                        </div>
+                        <div class="w3-container">
+                          <h5 class="save"><a href="winter outfit 1.jpeg" download>save</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter outfit 2.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w2').style.display = 'block'">  
+
+                        <div class="modal" id="modal-w2" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter outfit 2.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                        <div class="w3-container">
+                        <h5 class="save"><a href="winter outfit 2.jpeg" download>save</a></h5>   
+                        </div>                
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter outfit 3.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w3').style.display = 'block'">
+
+                        <div class="modal" id="modal-w3" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter outfit 3.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                        <div class="w3-container">
+                          <h5 class="save"><a href="winter outfit 3.jpeg" download>save</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter outfit 4.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w4').style.display = 'block'">
+
+                        <div class="modal" id="modal-w4" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter outfit 4.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter outfit 4.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter outfit 5.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w5').style.display = 'block'">
+
+                        <div class="modal" id="modal-w5" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter outfit 5.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter outfit 5.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 6.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w6').style.display = 'block'">
+
+                        <div class="modal" id="modal-w6" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 6.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 6.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 7.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w7').style.display = 'block'">
+
+                        <div class="modal" id="modal-w7" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 7.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 7.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 8.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w8').style.display = 'block'">
+
+                        <div class="modal" id="modal-w8" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 8.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 8.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 9.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w9').style.display = 'block'">
+
+                        <div class="modal" id="modal-w9" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 9.jpeg" style="width: 100%;">
+                          </div>
+                       </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 9.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 10.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w10').style.display = 'block'">
+
+                        <div class="modal" id="modal-w10" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 10.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 10.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 11.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w11').style.display = 'block'">
+
+                        <div class="modal" id="modal-w11" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 11.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 11.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card">
+                        <img class="all" src="winter 12.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-w12').style.display = 'block'">
+
+                        <div class="modal" id="modal-w12" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="winter 12.jpeg" style="width: 100%;">
+                          </div>
+                        </div>
+                         <div class="w3-container">
+                          <h5 class="save"><a href="winter 12.jpeg" download>save</a></h5>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <h1 class="smr wn">Wedding Outfit</h1>
+
+                  <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding outfit 1.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d1').style.display = 'block'">
+
+                       <div class="modal" id="modal-d1" onclick="this.style.display='none'">
+                          <div class="w3-model-content w3-animate-zoom" >
+                            <img src="wedding outfit 1.jpeg" style="width: 100%;">
+                          </div>
+                       </div>
+                       <div class="w3-container">
+                         <h5 class="save"><a href="wedding outfit 1.jpeg" download>save</a></h5>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding outfit 2.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d2').style.display = 'block'">  
+
+                       <div class="modal" id="modal-d2" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding outfit 2.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                       <div class="w3-container">
+                       <h5 class="save"><a href="wedding outfit 2.jpeg" download>save</a></h5>   
+                       </div>                
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding outfit3.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d3').style.display = 'block'">
+
+                       <div class="modal" id="modal-d3" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding outfit3.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding outfit3.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding outfit 4.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d4').style.display = 'block'">
+
+                       <div class="modal" id="modal-d4" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding outfit 4.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding outfit 4.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="Osaa by Adarsh Applique Embroidered Blouse Bridal Lehenga Set_ Aza Fashions.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d5').style.display = 'block'">
+
+                       <div class="modal" id="modal-d5" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="Osaa by Adarsh Applique Embroidered Blouse Bridal Lehenga Set_ Aza Fashions.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="Osaa by Adarsh Applique Embroidered Blouse Bridal Lehenga Set_ Aza Fashions.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding 7.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d6').style.display = 'block'">
+
+                       <div class="modal" id="modal-d6" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding 7.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding 7.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding 8.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d7').style.display = 'block'">
+
+                       <div class="modal" id="modal-d7" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding 8.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding 8.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="weddin 9.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d8').style.display = 'block'">
+
+                       <div class="modal" id="modal-d8" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="weddin 9.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="weddin 9.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding 10.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d9').style.display = 'block'">
+
+                       <div class="modal" id="modal-d9" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding 10.jpeg" style="width: 100%;">
+                         </div>
+                      </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding 10.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="wedding 11.jpeg" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d10').style.display = 'block'">
+
+                       <div class="modal" id="modal-d10" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="wedding 11.jpeg" style="width: 100%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="wedding 11.jpeg" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="w3-row-padding w3-margin-top">
+                   <div class="w3-third">
+                     <div class="w3-card">
+                       <img class="all" src="Mui_.♡" style="width: 100%; cursor: zoom-in;" onclick="document.getElementById('modal-d11').style.display = 'block'">
+
+                       <div class="modal" id="modal-d11" onclick="this.style.display='none'">
+                         <div class="w3-model-content w3-animate-zoom" >
+                           <img src="Mui_.♡" style="width: 130%;">
+                         </div>
+                       </div>
+                        <div class="w3-container">
+                         <h5 class="save"><a href="Mui_.♡" download>save</a></h5>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="img-footer">
+                  <h4 class="copyright-claim">copyrigtht  &copy; All rights reserved</h4>
+                 </div>
+
+
+              </div>  
+            </div>
+
+
+
+
+
+        </div>    
+    </div>
+    <section>
+        <div class="hats">
+            <div class="s-hat">
+                <div class="summer">
+                <h2>Summer hats</h2>
+                <p>Posted on 8 july 2024</p>
+                </div>
+                <img src="winter outfit 4.jpeg" class="summer-hat">
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi at? Similique a mollitia, temporibus iure ad accusamus molestiae inventore necessitatibus magni non assumenda id harum illum numquam quis soluta.</p>
+            </div>
+            <div class="s-hat">
+                <div class="summer">
+                <h2>Winter hats</h2>
+                <p>Posted on 8 july 2024</p>
+                </div>
+                <img src="Quelle frange adopter quand on a les cheveux longs _ (1).jpeg" class="summer-hat">
+                <p class="about">Hats! The trend this summer is hats for men!<br>
+                    <br>
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laudantium quam voluptate rem ratione cupiditate unde eos omnis ullam in, molestias minus fugit provident  </p>
+            </div>
+        </div>    
+    </section>
+    <div class="aside">
+        <div class="founder">
+            <h1 class="founder-head">Founder</h1>
+            <img src="img 1.jpg" class="ivana">
+            <div class="about-founder">
+            <h1 class="a-f">Ivana George</h1>
+                <p class="a-f">just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of Fashion. I want to share my world with you.</p>
+            </div>
+        </div> 
+        <div class="ads">
+           <h1 class="ad-head">Advertisement</h1>
+           <div class="ad-pos">
+            Your Ad here
+           </div>
+        </div>
+        <div class="tags">
+            <h1 class="tag-head">tags</h1>
+            <div class="main-tag">
+                <button href="javascript:void(0)" class="fashion-btn tab black" onclick="openlink(event, 'para1')">Fashion</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para2')">sarees</button>
+                <button href="javascript:void(0)"  class="fashion-btn tab" onclick="openlink(event, 'para3')">Ideas</button>
+                <button href="javascript:void(0)"  class="fashion-btn tab" onclick="openlink(event, 'para4')">Sweaters</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para5')">Hats</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para6')">Deals</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para7')">Accessories</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para8')">Kurtis</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para9')">Dress</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event,'para10')">Pandent</button>
+                <button href="javascript:void(0)" class="fashion-btn tab" onclick="openlink(event, 'para11')">Earings</button>
+                <button href="javascript:void(0)"  class="fashion-btn tab" onclick="openlink(event, 'para12')">Pants</button>
+                <p id="para1" class="city" style="display: none;"></p>
+                <p id="para2" class="city" style="display: none;"></p>
+                <p id="para3" class="city" style="display: none;"></p>
+                <p id="para4" class="city" style="display: none;"></p>
+                <p id="para5" class="city" style="display: none;"></p>
+                <p id="para6" class="city" style="display: none;"></p>
+                <p id="para7" class="city" style="display: none;"></p>
+                <p id="para8" class="city" style="display: none;"></p>
+                <p id="para9" class="city" style="display: none;"></p>
+                <p id="para10" class="city" style="display: none;"></p>
+                <p id="para11" class="city" style="display: none;"></p>
+                <p id="para12" class="city" style="display: none;"></p>
+            </div>
+        </div>
+        <div class="inspire">
+            <h1 class="inspire-head">Inspiration</h1>
+            <div class="inspireimg">
+            <img src="img 1.jpg" width="100%" class="img1">
+            <img src="images2.jpeg" width="100%" class="img1">
+            </div>
+        </div>
+        <div class="follow">
+            <h1 class="follow-head">Follow us on</h1>
+            <img src="facebook-logo_49354.png" class="icons fbk">
+            <img src="instagram_2111463.png" class="icons ">
+            <img src="youtube_1384060.png" class="icons">
+            <img src="twitter_3670151.png" class="icons">
+        </div>
+        <footer>
+            <img src="fashion icon.png" class="footer-img">
+            <span class="large">Your Fashion</span>
+            <div class="footer-infom">
+                <div class="offer inline">
+                    <span>Shop Now</span>
+                    <p>Amazing offer</p>
+                    <p>70% Off</p>
+                </div>
+                <div class="inline">
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                </div>
+                <div class="inline">
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                </div>
+                <div class="right">
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                    <p class="inline-menu">Home</p>
+                </div>
+                <img class="line"  src="shopping_bag_girl-removebg-preview.png" style="width: 23%; padding-left: 7%;">
+                
+            </div>
+            <div class="last">
+                &#9742; : 5469077532<br>
+                CopyRights&copy; All Rights Reserved</div>
+        </footer>
+    </div>
+
+    <script>
+        function openlink(evt, btnName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city"); 
+            for(i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for(i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" black","");
+            }
+            document.getElementById(btnName).style.display = "block";
+            evt.currentTarget.className += " black";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
